@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A284C9F19314BAB00A80E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284C9E19314BAB00A80E0B /* Foundation.framework */; };
+		8A284CA119314BAB00A80E0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284CA019314BAB00A80E0B /* CoreGraphics.framework */; };
+		8A284CA319314BAB00A80E0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284CA219314BAB00A80E0B /* UIKit.framework */; };
+		8A284CA919314BAB00A80E0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A284CA719314BAB00A80E0B /* InfoPlist.strings */; };
+		8A284CAB19314BAB00A80E0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A284CAA19314BAB00A80E0B /* main.m */; };
+		8A284CAF19314BAB00A80E0B /* RR_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A284CAE19314BAB00A80E0B /* RR_AppDelegate.m */; };
+		8A284CB219314BAB00A80E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A284CB019314BAB00A80E0B /* Main.storyboard */; };
+		8A284CB519314BAB00A80E0B /* RR_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A284CB419314BAB00A80E0B /* RR_ViewController.m */; };
+		8A284CB719314BAB00A80E0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A284CB619314BAB00A80E0B /* Images.xcassets */; };
+		8A284CBE19314BAB00A80E0B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284CBD19314BAB00A80E0B /* XCTest.framework */; };
+		8A284CBF19314BAB00A80E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284C9E19314BAB00A80E0B /* Foundation.framework */; };
+		8A284CC019314BAB00A80E0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A284CA219314BAB00A80E0B /* UIKit.framework */; };
+		8A284CC819314BAB00A80E0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A284CC619314BAB00A80E0B /* InfoPlist.strings */; };
+		8A284CCA19314BAB00A80E0B /* SurrealistsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A284CC919314BAB00A80E0B /* SurrealistsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A284CC119314BAB00A80E0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A284C9319314BAB00A80E0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A284C9A19314BAB00A80E0B;
+			remoteInfo = Surrealists;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8A284C9B19314BAB00A80E0B /* Surrealists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surrealists.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A284C9E19314BAB00A80E0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8A284CA019314BAB00A80E0B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8A284CA219314BAB00A80E0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8A284CA619314BAB00A80E0B /* Surrealists-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Surrealists-Info.plist"; sourceTree = "<group>"; };
+		8A284CA819314BAB00A80E0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A284CAA19314BAB00A80E0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A284CAC19314BAB00A80E0B /* Surrealists-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Surrealists-Prefix.pch"; sourceTree = "<group>"; };
+		8A284CAD19314BAB00A80E0B /* RR_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RR_AppDelegate.h; sourceTree = "<group>"; };
+		8A284CAE19314BAB00A80E0B /* RR_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RR_AppDelegate.m; sourceTree = "<group>"; };
+		8A284CB119314BAB00A80E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A284CB319314BAB00A80E0B /* RR_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RR_ViewController.h; sourceTree = "<group>"; };
+		8A284CB419314BAB00A80E0B /* RR_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RR_ViewController.m; sourceTree = "<group>"; };
+		8A284CB619314BAB00A80E0B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8A284CBC19314BAB00A80E0B /* SurrealistsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurrealistsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A284CBD19314BAB00A80E0B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8A284CC519314BAB00A80E0B /* SurrealistsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SurrealistsTests-Info.plist"; sourceTree = "<group>"; };
+		8A284CC719314BAB00A80E0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8A284CC919314BAB00A80E0B /* SurrealistsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurrealistsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A284C9819314BAB00A80E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CA119314BAB00A80E0B /* CoreGraphics.framework in Frameworks */,
+				8A284CA319314BAB00A80E0B /* UIKit.framework in Frameworks */,
+				8A284C9F19314BAB00A80E0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A284CB919314BAB00A80E0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CBE19314BAB00A80E0B /* XCTest.framework in Frameworks */,
+				8A284CC019314BAB00A80E0B /* UIKit.framework in Frameworks */,
+				8A284CBF19314BAB00A80E0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A284C9219314BAB00A80E0B = {
+			isa = PBXGroup;
+			children = (
+				8A284CA419314BAB00A80E0B /* Surrealists */,
+				8A284CC319314BAB00A80E0B /* SurrealistsTests */,
+				8A284C9D19314BAB00A80E0B /* Frameworks */,
+				8A284C9C19314BAB00A80E0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A284C9C19314BAB00A80E0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A284C9B19314BAB00A80E0B /* Surrealists.app */,
+				8A284CBC19314BAB00A80E0B /* SurrealistsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A284C9D19314BAB00A80E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A284C9E19314BAB00A80E0B /* Foundation.framework */,
+				8A284CA019314BAB00A80E0B /* CoreGraphics.framework */,
+				8A284CA219314BAB00A80E0B /* UIKit.framework */,
+				8A284CBD19314BAB00A80E0B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A284CA419314BAB00A80E0B /* Surrealists */ = {
+			isa = PBXGroup;
+			children = (
+				8A284CAD19314BAB00A80E0B /* RR_AppDelegate.h */,
+				8A284CAE19314BAB00A80E0B /* RR_AppDelegate.m */,
+				8A284CB019314BAB00A80E0B /* Main.storyboard */,
+				8A284CB319314BAB00A80E0B /* RR_ViewController.h */,
+				8A284CB419314BAB00A80E0B /* RR_ViewController.m */,
+				8A284CB619314BAB00A80E0B /* Images.xcassets */,
+				8A284CA519314BAB00A80E0B /* Supporting Files */,
+			);
+			path = Surrealists;
+			sourceTree = "<group>";
+		};
+		8A284CA519314BAB00A80E0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A284CA619314BAB00A80E0B /* Surrealists-Info.plist */,
+				8A284CA719314BAB00A80E0B /* InfoPlist.strings */,
+				8A284CAA19314BAB00A80E0B /* main.m */,
+				8A284CAC19314BAB00A80E0B /* Surrealists-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A284CC319314BAB00A80E0B /* SurrealistsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A284CC919314BAB00A80E0B /* SurrealistsTests.m */,
+				8A284CC419314BAB00A80E0B /* Supporting Files */,
+			);
+			path = SurrealistsTests;
+			sourceTree = "<group>";
+		};
+		8A284CC419314BAB00A80E0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A284CC519314BAB00A80E0B /* SurrealistsTests-Info.plist */,
+				8A284CC619314BAB00A80E0B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A284C9A19314BAB00A80E0B /* Surrealists */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A284CCD19314BAB00A80E0B /* Build configuration list for PBXNativeTarget "Surrealists" */;
+			buildPhases = (
+				8A284C9719314BAB00A80E0B /* Sources */,
+				8A284C9819314BAB00A80E0B /* Frameworks */,
+				8A284C9919314BAB00A80E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Surrealists;
+			productName = Surrealists;
+			productReference = 8A284C9B19314BAB00A80E0B /* Surrealists.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A284CBB19314BAB00A80E0B /* SurrealistsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A284CD019314BAB00A80E0B /* Build configuration list for PBXNativeTarget "SurrealistsTests" */;
+			buildPhases = (
+				8A284CB819314BAB00A80E0B /* Sources */,
+				8A284CB919314BAB00A80E0B /* Frameworks */,
+				8A284CBA19314BAB00A80E0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A284CC219314BAB00A80E0B /* PBXTargetDependency */,
+			);
+			name = SurrealistsTests;
+			productName = SurrealistsTests;
+			productReference = 8A284CBC19314BAB00A80E0B /* SurrealistsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A284C9319314BAB00A80E0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RR_;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Ronan Sean Reilly";
+				TargetAttributes = {
+					8A284CBB19314BAB00A80E0B = {
+						TestTargetID = 8A284C9A19314BAB00A80E0B;
+					};
+				};
+			};
+			buildConfigurationList = 8A284C9619314BAB00A80E0B /* Build configuration list for PBXProject "Surrealists" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A284C9219314BAB00A80E0B;
+			productRefGroup = 8A284C9C19314BAB00A80E0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A284C9A19314BAB00A80E0B /* Surrealists */,
+				8A284CBB19314BAB00A80E0B /* SurrealistsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A284C9919314BAB00A80E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CB719314BAB00A80E0B /* Images.xcassets in Resources */,
+				8A284CA919314BAB00A80E0B /* InfoPlist.strings in Resources */,
+				8A284CB219314BAB00A80E0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A284CBA19314BAB00A80E0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CC819314BAB00A80E0B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A284C9719314BAB00A80E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CAF19314BAB00A80E0B /* RR_AppDelegate.m in Sources */,
+				8A284CB519314BAB00A80E0B /* RR_ViewController.m in Sources */,
+				8A284CAB19314BAB00A80E0B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A284CB819314BAB00A80E0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A284CCA19314BAB00A80E0B /* SurrealistsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A284CC219314BAB00A80E0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A284C9A19314BAB00A80E0B /* Surrealists */;
+			targetProxy = 8A284CC119314BAB00A80E0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A284CA719314BAB00A80E0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A284CA819314BAB00A80E0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8A284CB019314BAB00A80E0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A284CB119314BAB00A80E0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A284CC619314BAB00A80E0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A284CC719314BAB00A80E0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A284CCB19314BAB00A80E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8A284CCC19314BAB00A80E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A284CCE19314BAB00A80E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Surrealists/Surrealists-Prefix.pch";
+				INFOPLIST_FILE = "Surrealists/Surrealists-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8A284CCF19314BAB00A80E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Surrealists/Surrealists-Prefix.pch";
+				INFOPLIST_FILE = "Surrealists/Surrealists-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8A284CD119314BAB00A80E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Surrealists.app/Surrealists";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Surrealists/Surrealists-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SurrealistsTests/SurrealistsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8A284CD219314BAB00A80E0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Surrealists.app/Surrealists";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Surrealists/Surrealists-Prefix.pch";
+				INFOPLIST_FILE = "SurrealistsTests/SurrealistsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A284C9619314BAB00A80E0B /* Build configuration list for PBXProject "Surrealists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A284CCB19314BAB00A80E0B /* Debug */,
+				8A284CCC19314BAB00A80E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A284CCD19314BAB00A80E0B /* Build configuration list for PBXNativeTarget "Surrealists" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A284CCE19314BAB00A80E0B /* Debug */,
+				8A284CCF19314BAB00A80E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8A284CD019314BAB00A80E0B /* Build configuration list for PBXNativeTarget "SurrealistsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A284CD119314BAB00A80E0B /* Debug */,
+				8A284CD219314BAB00A80E0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A284C9319314BAB00A80E0B /* Project object */;
+}

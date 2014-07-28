@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="x78-4C-4aN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ctA-Eg-BTk">
+            <objects>
+                <viewController id="x78-4C-4aN" customClass="SU_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tbS-gt-QxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="fR7-ai-4r9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bIV-2r-q4h">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Og-Dc-sYF">
+                                <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="DdN-s0-UbN">
+                                        <nil key="title"/>
+                                        <textField key="titleView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" placeholder="http://" minimumFontSize="17" clearButtonMode="whileEditing" id="Duz-bK-BDq">
+                                            <rect key="frame" x="114" y="7" width="541" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                                            <connections>
+                                                <action selector="loadLocation:" destination="x78-4C-4aN" eventType="editingDidEndOnExit" id="UTs-hr-NaB"/>
+                                            </connections>
+                                        </textField>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="4KF-ow-ucV">
+                                            <connections>
+                                                <action selector="loadLocation:" destination="x78-4C-4aN" id="Vga-gl-1fg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q0I-Bu-07L">
+                                <rect key="frame" x="0.0" y="64" width="768" height="910"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="x78-4C-4aN" id="piI-0M-s9I"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7b-EB-aq7">
+                                <rect key="frame" x="0.0" y="974" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="play" id="Shi-ht-WAg">
+                                        <connections>
+                                            <action selector="shortenUrl:" destination="x78-4C-4aN" id="RJz-ce-Lg6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="sbY-Q8-nEB"/>
+                                    <barButtonItem title="Tap Arrow to Shorten" style="plain" id="Hez-vj-EGS">
+                                        <color key="tintColor" red="0.041294642860000001" green="0.041294642860000001" blue="0.041294642860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="esQ-k7-zaE"/>
+                                    <barButtonItem enabled="NO" title="Copy" id="RER-Dr-toq">
+                                        <connections>
+                                            <action selector="clipboardURL:" destination="x78-4C-4aN" id="6TV-Mm-aKP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Og-Dc-sYF" firstAttribute="top" secondItem="tbS-gt-QxN" secondAttribute="bottom" id="Ftd-L5-ibK"/>
+                            <constraint firstItem="fR7-ai-4r9" firstAttribute="top" secondItem="g7b-EB-aq7" secondAttribute="bottom" constant="6" id="MJ8-nP-64f"/>
+                            <constraint firstItem="2Og-Dc-sYF" firstAttribute="leading" secondItem="Q0I-Bu-07L" secondAttribute="leading" id="cnQ-1m-aex"/>
+                            <constraint firstItem="g7b-EB-aq7" firstAttribute="leading" secondItem="bIV-2r-q4h" secondAttribute="leading" id="fpH-Sd-e75"/>
+                            <constraint firstItem="2Og-Dc-sYF" firstAttribute="trailing" secondItem="Q0I-Bu-07L" secondAttribute="trailing" id="heh-7g-TCr"/>
+                            <constraint firstItem="g7b-EB-aq7" firstAttribute="top" secondItem="Q0I-Bu-07L" secondAttribute="bottom" id="mv0-2e-KOv"/>
+                            <constraint firstItem="Q0I-Bu-07L" firstAttribute="trailing" secondItem="g7b-EB-aq7" secondAttribute="trailing" id="psJ-o4-EEi"/>
+                            <constraint firstAttribute="trailing" secondItem="g7b-EB-aq7" secondAttribute="trailing" id="srn-NR-fCw"/>
+                            <constraint firstItem="Q0I-Bu-07L" firstAttribute="leading" secondItem="g7b-EB-aq7" secondAttribute="leading" id="ut2-pa-UR6"/>
+                            <constraint firstItem="Q0I-Bu-07L" firstAttribute="top" secondItem="2Og-Dc-sYF" secondAttribute="bottom" id="vig-Fx-dA4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clipboardButton" destination="RER-Dr-toq" id="LSS-2o-cqe"/>
+                        <outlet property="shortLabel" destination="Hez-vj-EGS" id="ozM-6W-1JH"/>
+                        <outlet property="shortenButton" destination="Shi-ht-WAg" id="l6T-oi-LdO"/>
+                        <outlet property="urlField" destination="Duz-bK-BDq" id="B87-u8-Q2t"/>
+                        <outlet property="webView" destination="Q0I-Bu-07L" id="RLg-KY-KTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92l-je-Otu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="1663"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

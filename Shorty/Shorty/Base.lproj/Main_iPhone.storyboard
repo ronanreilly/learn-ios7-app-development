@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -7,7 +7,6 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <viewController id="vXZ-lx-hvc" customClass="SU_ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
@@ -28,32 +27,71 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                                            <connections>
+                                                <action selector="loadLocation:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="2Hn-se-Zsv"/>
+                                            </connections>
                                         </textField>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fB3-H7-FVO"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="fB3-H7-FVO">
+                                            <connections>
+                                                <action selector="loadLocation:" destination="vXZ-lx-hvc" id="wf3-OW-lOU"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-dB-dhj">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-dB-dhj">
+                                <rect key="frame" x="0.0" y="64" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="3nK-qW-YtW"/>
+                                </connections>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ax-cZ-m6W">
+                                <rect key="frame" x="0.0" y="518" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" systemItem="play" id="aA6-M1-meR">
+                                        <connections>
+                                            <action selector="shortenUrl:" destination="vXZ-lx-hvc" id="Nve-fZ-MhX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="q3K-fI-Sy2"/>
+                                    <barButtonItem title="Tap Arrow to Shorten" style="plain" id="yPn-nW-TDN">
+                                        <color key="tintColor" red="0.041294642857142905" green="0.041294642857142905" blue="0.041294642857142905" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Xrd-Ds-dpu"/>
+                                    <barButtonItem enabled="NO" title="Copy" id="VjS-4a-svv">
+                                        <connections>
+                                            <action selector="clipboardURL:" destination="vXZ-lx-hvc" id="oqk-Ra-aLO"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6ax-cZ-m6W" firstAttribute="top" secondItem="zaT-dB-dhj" secondAttribute="bottom" id="11f-SG-U5n"/>
                             <constraint firstAttribute="centerX" secondItem="96q-e0-JzR" secondAttribute="centerX" id="9Fz-cr-kif"/>
                             <constraint firstItem="96q-e0-JzR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="CZ3-vL-kZ3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="6ax-cZ-m6W" secondAttribute="bottom" constant="6" id="NBz-8I-AJg"/>
                             <constraint firstItem="96q-e0-JzR" firstAttribute="leading" secondItem="zaT-dB-dhj" secondAttribute="leading" id="Zay-x9-a8Q"/>
                             <constraint firstItem="zaT-dB-dhj" firstAttribute="top" secondItem="96q-e0-JzR" secondAttribute="bottom" id="a16-Dp-Iit"/>
                             <constraint firstItem="zaT-dB-dhj" firstAttribute="trailing" secondItem="96q-e0-JzR" secondAttribute="trailing" id="aWF-zx-nuT"/>
-                            <constraint firstAttribute="bottom" secondItem="zaT-dB-dhj" secondAttribute="bottom" id="b3b-b7-Jzo"/>
+                            <constraint firstItem="6ax-cZ-m6W" firstAttribute="leading" secondItem="zaT-dB-dhj" secondAttribute="leading" id="bNn-lM-gVP"/>
+                            <constraint firstItem="zaT-dB-dhj" firstAttribute="trailing" secondItem="6ax-cZ-m6W" secondAttribute="trailing" id="l4W-sU-RqN"/>
                             <constraint firstItem="zaT-dB-dhj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nrJ-Dk-EhP"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="zaT-dB-dhj" id="ofx-tb-Xgw"/>
+                        <outlet property="clipboardButton" destination="VjS-4a-svv" id="XsP-H8-2mq"/>
+                        <outlet property="shortLabel" destination="yPn-nW-TDN" id="b30-DM-Fy4"/>
+                        <outlet property="shortenButton" destination="aA6-M1-meR" id="JAd-ar-T7F"/>
+                        <outlet property="urlField" destination="6VU-l4-lFm" id="RZY-e5-j0s"/>
+                        <outlet property="webView" destination="zaT-dB-dhj" id="doB-GU-Wb8"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
